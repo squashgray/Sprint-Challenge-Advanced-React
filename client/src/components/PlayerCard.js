@@ -7,8 +7,9 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 200,
-    marginBottom: 10
+    minWidth: 280,
+    marginBottom: 10,
+    backgroundColor: "lightgrey"
   }
 });
 
@@ -19,7 +20,7 @@ export default function PlayerCard(props) {
     <Card className={classes.card}>
       <CardActionArea>
         <CardContent>
-          <Typography gutterBottom variant="h5" color="primary" component="h2">
+          <Typography variant="h5" color="primary" component="h2">
             {props.players.name}
           </Typography>
           <Typography variant="body1" color="textPrimary" component="p">
